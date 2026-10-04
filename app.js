@@ -98,7 +98,7 @@
   document.querySelectorAll(".anchor").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var id = btn.getAttribute("data-anchor");
-      var url = location.origin + location.pathname + "#" + id;
+      var url = location.href.split("#")[0] + "#" + id;
       // Also update the hash so the stable anchor is visible
       history.replaceState(null, "", "#" + id);
       function done() { showToast("Link copied: #" + id); }
