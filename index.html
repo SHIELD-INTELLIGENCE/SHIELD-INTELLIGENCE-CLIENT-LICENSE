@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHIELD Intelligence — Client License v1.0</title>
+<meta name="description" content="SHIELD Intelligence Client License v1.0 — Universal licensing framework for SHIELD-developed digital products. Governing law: India.">
+<link rel="icon" href="assets/shield.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#document">Skip to license document</a>
+
+<header class="topbar no-print" role="banner">
+  <div class="topbar-inner">
+    <div class="brand-mini" aria-label="SHIELD Intelligence Client License v1.0">SHIELD INTELLIGENCE <span>· CLIENT LICENSE v1.0</span></div>
+    <div class="topbar-spacer"></div>
+    <div class="search-wrap" role="search" aria-label="Document search">
+      <label for="search" class="no-print" style="position:absolute;left:-9999px">Search license</label>
+      <input type="search" id="search" placeholder="Search license…" autocomplete="off" aria-describedby="search-count">
+      <span class="search-count" id="search-count" aria-live="polite"></span>
+      <button class="icon-btn" id="search-prev" aria-label="Previous match" title="Previous match">↑</button>
+      <button class="icon-btn" id="search-next" aria-label="Next match" title="Next match">↓</button>
+    </div>
+    <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">◐ Theme</button>
+    <a class="btn" href="LICENSE.md" download="SHIELD-CLIENT-LICENSE-v1.0.md" title="Download LICENSE.md">↓ <span class="hide-sm">Markdown</span><span> .md</span></a>
+    <button class="btn primary" id="pdf-btn" title="Save / print as PDF">↓ <span class="hide-sm">Download</span> PDF</button>
+  </div>
+</header>
+
+<div class="doc-header">
+  <p class="eyebrow">SHIELD INTELLIGENCE · LEGAL DOCUMENT</p>
+  <h1>SHIELD INTELLIGENCE<br>CLIENT LICENSE <span class="ver">v1.0</span></h1>
+  <p class="tagline">Universal licensing framework for SHIELD-developed digital products.</p>
+  <div class="meta" aria-label="Document metadata">
+    <span><strong>Effective Version:</strong> <code>1.0</code></span>
+    <span><strong>Licensor:</strong> SHIELD Intelligence</span>
+    <span><strong>Governing Law:</strong> India</span>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="toc collapsed" id="toc-aside" aria-label="Table of contents">
+    <button class="toc-toggle" id="toc-toggle" aria-expanded="false" aria-controls="toc-nav">
+      <span>Table of Contents</span><span aria-hidden="true">▾</span>
+    </button>
+    <h2>CONTENTS</h2>
+    <nav id="toc-nav" aria-label="License sections">
+      <ol id="toc-list">
+        <li><a href="#purpose"><span class="n">01</span> Purpose</a></li>
+        <li><a href="#definitions"><span class="n">02</span> Definitions</a></li>
+        <li><a href="#client-ownership"><span class="n">03</span> Client Ownership</a></li>
+        <li><a href="#shield-background-ip"><span class="n">04</span> SHIELD Background IP</a></li>
+        <li><a href="#reusable-technology"><span class="n">05</span> Reusable Technology</a></li>
+        <li><a href="#client-brand-content-materials"><span class="n">06</span> Client Brand, Content and Materials</a></li>
+        <li><a href="#third-party-software-services"><span class="n">07</span> Third-Party Software and Services</a></li>
+        <li><a href="#client-modification-source-code-transfer"><span class="n">08</span> Client Modification and Source-Code Transfer</a></li>
+        <li><a href="#no-unauthorized-resale-sublicensing"><span class="n">09</span> No Unauthorized Resale or Sublicensing</a></li>
+        <li><a href="#license-term"><span class="n">10</span> License Term</a></li>
+        <li><a href="#payment-delivery"><span class="n">11</span> Payment and Delivery</a></li>
+        <li><a href="#subscriptions-maintenance"><span class="n">12</span> Subscriptions and Maintenance</a></li>
+        <li><a href="#updates-future-improvements"><span class="n">13</span> Updates and Future Improvements</a></li>
+        <li><a href="#service-availability-uptime"><span class="n">14</span> Service Availability and Uptime</a></li>
+        <li><a href="#third-party-api-service-dependencies"><span class="n">15</span> Third-Party API and Service Dependencies</a></li>
+        <li><a href="#suspension-non-payment-breach"><span class="n">16</span> Suspension for Non-Payment or Breach</a></li>
+        <li><a href="#shield-attribution"><span class="n">17</span> SHIELD Attribution</a></li>
+        <li><a href="#portfolio-rights"><span class="n">18</span> Portfolio Rights</a></li>
+        <li><a href="#confidentiality"><span class="n">19</span> Confidentiality</a></li>
+        <li><a href="#security-proprietary-technology"><span class="n">20</span> Security and Proprietary Technology</a></li>
+        <li><a href="#client-responsibilities"><span class="n">21</span> Client Responsibilities</a></li>
+        <li><a href="#warranties-service-commitments"><span class="n">22</span> Warranties and Service Commitments</a></li>
+        <li><a href="#limitation-liability"><span class="n">23</span> Limitation of Liability</a></li>
+        <li><a href="#termination"><span class="n">24</span> Termination</a></li>
+        <li><a href="#source-code-handover"><span class="n">25</span> Source-Code Handover</a></li>
+        <li><a href="#client-data"><span class="n">26</span> Client Data</a></li>
+        <li><a href="#open-source-third-party-licenses"><span class="n">27</span> Open-Source and Third-Party Licenses</a></li>
+        <li><a href="#intellectual-property-infringement"><span class="n">28</span> Intellectual Property Infringement</a></li>
+        <li><a href="#changes-to-license"><span class="n">29</span> Changes to this License</a></li>
+        <li><a href="#severability"><span class="n">30</span> Severability</a></li>
+        <li><a href="#governing-law"><span class="n">31</span> Governing Law</a></li>
+        <li><a href="#entire-agreement"><span class="n">32</span> Entire Agreement</a></li>
+        <li><a href="#acceptance"><span class="n">33</span> Acceptance</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <main class="doc" id="document">
+    <div class="callout" role="note" aria-label="License status">
+      <strong>License status</strong>
+      Version 1.0 · Universal SHIELD client-product licensing framework
+    </div>
+
+    <h2 class="doc-title">SHIELD INTELLIGENCE CLIENT LICENSE v1.0</h2>
+    <div class="doc-meta-block">
+      <p><strong>Effective Version:</strong> 1.0<br><strong>Licensor:</strong> SHIELD Intelligence<br><strong>Governing Law:</strong> Laws of India</p>
+    </div>
+    <hr>
+
+    <article id="license-body">
+    <section id="purpose" aria-labelledby="h-purpose">
+      <h2 class="sec" id="h-purpose">1. Purpose <button class="anchor" data-anchor="purpose" aria-label="Copy link to section 1. Purpose" title="Copy link">§</button></h2>
+      <p>This Client License governs the rights granted by SHIELD Intelligence (“SHIELD”) to a client (“Client”) in relation to websites, web applications, software, platforms, dashboards, digital systems, custom software, designs, and other digital products developed and delivered by SHIELD (“<code>Client Product</code>”).</p>
+      <p>This License is intended to establish clear ownership, usage, payment, maintenance, intellectual-property, and service rights for SHIELD client products.</p>
+      <p>A project-specific agreement, proposal, statement of work, quotation, or service agreement may contain additional commercial terms. Where expressly agreed in writing, those project-specific terms shall supplement this License.</p>
+    </section>
+
+    <section id="definitions" aria-labelledby="h-definitions">
+      <h2 class="sec" id="h-definitions">2. Definitions <button class="anchor" data-anchor="definitions" aria-label="Copy link to section 2. Definitions" title="Copy link">§</button></h2>
+      <h3>2.1 Client Product</h3>
+      <p>“<code>Client Product</code>” means the specific finished digital product developed by SHIELD for the Client under an agreed project.</p>
+      <p>This may include, depending on the project:</p>
+      <ul>
+        <li>source code</li>
+        <li>compiled code</li>
+        <li>website interfaces</li>
+        <li>web applications</li>
+        <li>application logic</li>
+        <li>databases and schemas</li>
+        <li>project-specific functionality</li>
+        <li>project-specific designs</li>
+        <li>project-specific UI implementation</li>
+        <li>documentation</li>
+        <li>configuration</li>
+        <li>integrations</li>
+        <li>assets specifically created for the Client</li>
+      </ul>
+      <h3>2.2 SHIELD Background IP</h3>
+      <p>“<code>SHIELD Background IP</code>” means technology, intellectual property, systems, tools, frameworks, libraries, components, templates, methodologies, designs, security systems, encryption systems, development systems, deployment systems, code, concepts, processes, know-how, and other materials that:</p>
+      <ol>
+        <li>existed before the <code>Client Product</code>;</li>
+        <li>were independently developed by SHIELD;</li>
+        <li>are designed for reuse across multiple products or clients; or</li>
+        <li>constitute SHIELD’s general engineering, design, security, or development infrastructure.</li>
+      </ol>
+      <p><code>SHIELD Background IP</code> remains the exclusive property of SHIELD.</p>
+      <h3>2.3 Reusable Improvements</h3>
+      <p>“<code>Reusable Improvements</code>” means improvements, modifications, abstractions, optimizations, components, systems, or techniques developed while creating a <code>Client Product</code> that are reasonably capable of being reused in SHIELD’s own products or other client projects without disclosing the Client’s confidential information or proprietary business logic.</p>
+      <p><code>Reusable Improvements</code> remain SHIELD intellectual property.</p>
+    </section>
+
+    <section id="client-ownership" aria-labelledby="h-client-ownership">
+      <h2 class="sec" id="h-client-ownership">3. Client Ownership <button class="anchor" data-anchor="client-ownership" aria-label="Copy link to section 3. Client Ownership" title="Copy link">§</button></h2>
+      <p>Upon:</p>
+      <ol>
+        <li>completion of the agreed project;</li>
+        <li>full payment of all amounts due for the project; and</li>
+        <li>activation of the applicable license,</li>
+      </ol>
+      <p>the Client shall receive ownership of the <strong>Client-specific portions of the delivered <code>Client Product</code></strong>.</p>
+      <p>This includes project-specific work created specifically for the Client and not constituting <code>SHIELD Background IP</code> or <code>Reusable Improvements</code>.</p>
+      <p>Client ownership may include:</p>
+      <ul>
+        <li>custom project code;</li>
+        <li>custom business workflows;</li>
+        <li>project-specific interface implementation;</li>
+        <li>project-specific designs;</li>
+        <li>project-specific database structures;</li>
+        <li>custom functionality;</li>
+        <li>documentation created specifically for the Client.</li>
+      </ul>
+      <p>The Client does <strong>not</strong> acquire <code>SHIELD Background IP</code>, <code>Reusable Improvements</code>, internal SHIELD systems, proprietary security technology, reusable frameworks, or SHIELD confidential technology merely because those technologies are incorporated into or used to develop the <code>Client Product</code>.</p>
+    </section>
+
+    <section id="shield-background-ip" aria-labelledby="h-shield-background-ip">
+      <h2 class="sec" id="h-shield-background-ip">4. SHIELD Background IP <button class="anchor" data-anchor="shield-background-ip" aria-label="Copy link to section 4. SHIELD Background IP" title="Copy link">§</button></h2>
+      <p>SHIELD retains all rights, title, and interest in <code>SHIELD Background IP</code>.</p>
+      <p>This includes, without limitation:</p>
+      <ul>
+        <li>reusable code;</li>
+        <li>internal frameworks;</li>
+        <li>reusable components;</li>
+        <li>UI systems;</li>
+        <li>design systems;</li>
+        <li>templates;</li>
+        <li>development tooling;</li>
+        <li>deployment tooling;</li>
+        <li>internal APIs;</li>
+        <li>security architecture;</li>
+        <li>encryption systems;</li>
+        <li>authentication architecture;</li>
+        <li>proprietary algorithms;</li>
+        <li>reusable infrastructure;</li>
+        <li>internal automation;</li>
+        <li>AI-assisted development workflows;</li>
+        <li>engineering methodologies;</li>
+        <li>technical know-how;</li>
+        <li>general design methodologies.</li>
+      </ul>
+      <p>Nothing in this License shall be interpreted as transferring ownership of <code>SHIELD Background IP</code> to the Client.</p>
+      <p>Where <code>SHIELD Background IP</code> is necessary for the Client to operate the <code>Client Product</code>, the Client receives the necessary right to use that component as part of the <code>Client Product</code> for the duration of the applicable license.</p>
+    </section>
+
+    <section id="reusable-technology" aria-labelledby="h-reusable-technology">
+      <h2 class="sec" id="h-reusable-technology">5. Reusable Technology <button class="anchor" data-anchor="reusable-technology" aria-label="Copy link to section 5. Reusable Technology" title="Copy link">§</button></h2>
+      <p>SHIELD may reuse general-purpose technology, components, engineering techniques, design systems, frameworks, concepts, and <code>Reusable Improvements</code> developed during a Client project.</p>
+      <p>SHIELD may use such technology:</p>
+      <ul>
+        <li>in its own products;</li>
+        <li>in future SHIELD products;</li>
+        <li>in other client projects;</li>
+        <li>internally for research and development.</li>
+      </ul>
+      <p>SHIELD shall not use or disclose the Client’s confidential information, proprietary business information, private data, trade secrets, or unique business logic merely by exercising this right.</p>
+    </section>
+
+    <section id="client-brand-content-materials" aria-labelledby="h-client-brand">
+      <h2 class="sec" id="h-client-brand">6. Client Brand, Content and Materials <button class="anchor" data-anchor="client-brand-content-materials" aria-label="Copy link to section 6" title="Copy link">§</button></h2>
+      <p>The Client retains ownership of its:</p>
+      <ul>
+        <li>company name;</li>
+        <li>trademarks;</li>
+        <li>logos supplied by the Client;</li>
+        <li>product information;</li>
+        <li>photographs supplied by the Client;</li>
+        <li>written content supplied by the Client;</li>
+        <li>proprietary business information;</li>
+        <li>customer information;</li>
+        <li>confidential data;</li>
+        <li>other materials owned by the Client.</li>
+      </ul>
+      <p>SHIELD receives the necessary permission to use such materials solely for the purpose of developing, operating, maintaining, demonstrating, or supporting the <code>Client Product</code>.</p>
+      <p>Client branding does not become SHIELD property.</p>
+      <p>However, SHIELD retains ownership of its own:</p>
+      <ul>
+        <li>design systems;</li>
+        <li>reusable visual systems;</li>
+        <li>templates;</li>
+        <li>general layouts;</li>
+        <li>reusable UI components;</li>
+        <li>design methodology;</li>
+        <li>generic visual concepts.</li>
+      </ul>
+      <p>A visual system developed by SHIELD may therefore be reused in other projects where doing so does not reproduce the Client’s protected branding, confidential material, or proprietary identity.</p>
+    </section>
+
+    <section id="third-party-software-services" aria-labelledby="h-third-party">
+      <h2 class="sec" id="h-third-party">7. Third-Party Software and Services <button class="anchor" data-anchor="third-party-software-services" aria-label="Copy link to section 7" title="Copy link">§</button></h2>
+      <p>Client Products may incorporate third-party software, open-source libraries, APIs, hosting providers, cloud infrastructure, payment providers, authentication services, analytics services, databases, CDN services, domain services, or other external technologies.</p>
+      <p>Such third-party components remain subject to their respective licenses and terms.</p>
+      <p>SHIELD does not transfer ownership of third-party intellectual property to the Client.</p>
+      <p>SHIELD may use open-source software where appropriate and in accordance with applicable open-source licenses.</p>
+    </section>
+
+    <section id="client-modification-source-code-transfer" aria-labelledby="h-modification">
+      <h2 class="sec" id="h-modification">8. Client Modification and Source-Code Transfer <button class="anchor" data-anchor="client-modification-source-code-transfer" aria-label="Copy link to section 8" title="Copy link">§</button></h2>
+      <p>The Client may not independently transfer, redistribute, resell, sublicense, or commercially repurpose the <code>Client Product</code> outside the scope of this License.</p>
+      <p>The Client may request a full source-code/repository handover by contacting SHIELD in writing.</p>
+      <p>Before such transfer:</p>
+      <ol>
+        <li>all outstanding subscription, maintenance, hosting, development, or other applicable fees must be paid;</li>
+        <li>any outstanding contractual obligations must be satisfied;</li>
+        <li>SHIELD may remove proprietary <code>SHIELD Background IP</code> that is not required to operate the <code>Client Product</code>;</li>
+        <li>SHIELD may remove confidential security systems, encryption logic, internal infrastructure, proprietary tooling, credentials, secrets, and other SHIELD-protected technology;</li>
+        <li>SHIELD will provide the transferable Client-specific project materials agreed for handover.</li>
+      </ol>
+      <p>After the applicable handover is completed and all required fees are paid, the Client may independently modify the transferred Client-specific source code.</p>
+      <p><code>SHIELD Background IP</code> remains SHIELD property even after source-code transfer.</p>
+    </section>
+
+    <section id="no-unauthorized-resale-sublicensing" aria-labelledby="h-resale">
+      <h2 class="sec" id="h-resale">9. No Unauthorized Resale or Sublicensing <button class="anchor" data-anchor="no-unauthorized-resale-sublicensing" aria-label="Copy link to section 9" title="Copy link">§</button></h2>
+      <p>The Client may not:</p>
+      <ul>
+        <li>resell the <code>Client Product</code>;</li>
+        <li>sublicense the <code>Client Product</code>;</li>
+        <li>rent or lease the <code>Client Product</code>;</li>
+        <li>white-label the <code>Client Product</code> for unrelated third parties;</li>
+        <li>distribute copies to unrelated businesses;</li>
+        <li>use the <code>Client Product</code> as a commercial product for third parties;</li>
+      </ul>
+      <p>unless SHIELD has provided written authorization and the applicable source-code/handover requirements have been completed.</p>
+      <p>The Client’s license is tied to the Client entity for which the product was developed.</p>
+      <p>Transfer of the <code>Client Product</code> to another legal entity requires SHIELD’s written authorization.</p>
+    </section>
+
+    <section id="license-term" aria-labelledby="h-term">
+      <h2 class="sec" id="h-term">10. License Term <button class="anchor" data-anchor="license-term" aria-label="Copy link to section 10" title="Copy link">§</button></h2>
+      <p>The Client’s usage rights begin only after:</p>
+      <ul>
+        <li>the project has been fully paid for; and</li>
+        <li>the <code>Client Product</code> has been delivered or activated.</li>
+      </ul>
+      <p>For subscription-based products, the license remains active while the applicable subscription and required payments remain current.</p>
+      <p>For products purchased under a lifetime license, the Client receives perpetual usage rights to the applicable <code>Client Product</code>, subject to this License and any continuing third-party service requirements.</p>
+    </section>
+
+    <section id="payment-delivery" aria-labelledby="h-payment">
+      <h2 class="sec" id="h-payment">11. Payment and Delivery <button class="anchor" data-anchor="payment-delivery" aria-label="Copy link to section 11" title="Copy link">§</button></h2>
+      <p>SHIELD is not required to deliver the completed <code>Client Product</code>, source code, credentials, deployment access, or other deliverables until all required amounts for the applicable delivery milestone have been paid.</p>
+      <p>Failure to complete payment may result in:</p>
+      <ul>
+        <li>delayed delivery;</li>
+        <li>suspension of services;</li>
+        <li>suspension of hosted access;</li>
+        <li>withholding of source-code transfer;</li>
+        <li>termination of applicable services.</li>
+      </ul>
+      <p>SHIELD will not be required to provide unpaid deliverables.</p>
+    </section>
+
+    <section id="subscriptions-maintenance" aria-labelledby="h-subs">
+      <h2 class="sec" id="h-subs">12. Subscriptions and Maintenance <button class="anchor" data-anchor="subscriptions-maintenance" aria-label="Copy link to section 12" title="Copy link">§</button></h2>
+      <p>Where a <code>Client Product</code> is provided under a recurring subscription, the subscription may cover, depending on the applicable project:</p>
+      <ul>
+        <li>hosting;</li>
+        <li>maintenance;</li>
+        <li>updates;</li>
+        <li>security updates;</li>
+        <li>technical support;</li>
+        <li>infrastructure;</li>
+        <li>monitoring;</li>
+        <li>backups;</li>
+        <li>deployment;</li>
+        <li>third-party service management;</li>
+        <li>continued access to SHIELD-managed infrastructure.</li>
+      </ul>
+      <p>The exact services included in a subscription shall be specified in the applicable commercial agreement.</p>
+    </section>
+
+    <section id="updates-future-improvements" aria-labelledby="h-updates">
+      <h2 class="sec" id="h-updates">13. Updates and Future Improvements <button class="anchor" data-anchor="updates-future-improvements" aria-label="Copy link to section 13" title="Copy link">§</button></h2>
+      <p>Where the Client has purchased a service plan that includes updates, SHIELD may provide:</p>
+      <ul>
+        <li>bug fixes;</li>
+        <li>security updates;</li>
+        <li>compatibility updates;</li>
+        <li>feature updates;</li>
+        <li>infrastructure updates;</li>
+        <li>design updates;</li>
+        <li>performance improvements.</li>
+      </ul>
+      <p>The scope of included updates is determined by the applicable subscription or service agreement.</p>
+      <p>SHIELD retains ownership of <code>SHIELD Background IP</code> and <code>Reusable Improvements</code> incorporated into future updates.</p>
+    </section>
+
+    <section id="service-availability-uptime" aria-labelledby="h-uptime">
+      <h2 class="sec" id="h-uptime">14. Service Availability and Uptime <button class="anchor" data-anchor="service-availability-uptime" aria-label="Copy link to section 14" title="Copy link">§</button></h2>
+      <p>Where SHIELD expressly provides an uptime commitment for a <code>Client Product</code> or SHIELD-managed service, SHIELD shall use commercially reasonable measures to provide the agreed uptime commitment.</p>
+      <p>Where the applicable service agreement specifies <strong>100% uptime</strong>, SHIELD shall provide the agreed service with the objective and commitment of continuous availability within the infrastructure directly controlled by SHIELD.</p>
+      <p>However, SHIELD shall not be responsible for downtime, degradation, interruption, or unavailability caused by infrastructure, services, providers, or circumstances outside SHIELD’s reasonable control, including but not limited to:</p>
+      <ul>
+        <li>Netlify outages;</li>
+        <li>Vercel outages;</li>
+        <li>Firebase outages;</li>
+        <li>Supabase outages;</li>
+        <li>AWS outages;</li>
+        <li>cloud-provider outages;</li>
+        <li>DNS provider outages;</li>
+        <li>domain registrar outages;</li>
+        <li><code>third-party API</code> outages;</li>
+        <li>payment-provider outages;</li>
+        <li>email-provider outages;</li>
+        <li>CDN outages;</li>
+        <li>internet service provider failures;</li>
+        <li>telecommunications failures;</li>
+        <li>third-party authentication failures;</li>
+        <li>upstream infrastructure failures;</li>
+        <li>government restrictions;</li>
+        <li>force majeure events;</li>
+        <li>Client-caused configuration errors;</li>
+        <li>unauthorized modifications;</li>
+        <li>Client-controlled infrastructure failures.</li>
+      </ul>
+      <p>Such third-party or external outages shall not constitute a breach of SHIELD’s uptime commitment where SHIELD itself is not responsible for the underlying failure.</p>
+    </section>
+
+    <section id="third-party-api-service-dependencies" aria-labelledby="h-deps">
+      <h2 class="sec" id="h-deps">15. Third-Party API and Service Dependencies <button class="anchor" data-anchor="third-party-api-service-dependencies" aria-label="Copy link to section 15" title="Copy link">§</button></h2>
+      <p>Where a <code>Client Product</code> depends on a third-party service, SHIELD cannot guarantee the continued availability, functionality, pricing, API behavior, or compatibility of that third-party service.</p>
+      <p>If a third-party provider:</p>
+      <ul>
+        <li>changes its API;</li>
+        <li>removes an endpoint;</li>
+        <li>changes pricing;</li>
+        <li>introduces restrictions;</li>
+        <li>experiences downtime;</li>
+        <li>terminates a service;</li>
+        <li>changes authentication requirements;</li>
+      </ul>
+      <p>SHIELD may require additional development work to restore or replace the affected functionality.</p>
+      <p>Such work may be treated as additional development unless expressly included in the Client’s service agreement.</p>
+    </section>
+
+    <section id="suspension-non-payment-breach" aria-labelledby="h-suspension">
+      <h2 class="sec" id="h-suspension">16. Suspension for Non-Payment or Breach <button class="anchor" data-anchor="suspension-non-payment-breach" aria-label="Copy link to section 16" title="Copy link">§</button></h2>
+      <p>If the Client:</p>
+      <ul>
+        <li>fails to pay applicable fees;</li>
+        <li>materially breaches this License;</li>
+        <li>uses the <code>Client Product</code> unlawfully;</li>
+        <li>attempts unauthorized redistribution;</li>
+        <li>attempts unauthorized source-code extraction;</li>
+        <li>compromises SHIELD proprietary technology;</li>
+        <li>violates applicable third-party terms;</li>
+      </ul>
+      <p>SHIELD may suspend the applicable service or license.</p>
+      <p>Before suspending an active service for payment default or a remediable breach, SHIELD will ordinarily provide written notice to the Client and reasonable opportunity to resolve the issue, unless immediate suspension is reasonably necessary to protect SHIELD, the Client, infrastructure, users, or security.</p>
+      <p>Once the applicable issue has been resolved and required payments have been received, SHIELD may restore the service where technically and commercially feasible.</p>
+    </section>
+
+    <section id="shield-attribution" aria-labelledby="h-attr">
+      <h2 class="sec" id="h-attr">17. SHIELD Attribution <button class="anchor" data-anchor="shield-attribution" aria-label="Copy link to section 17" title="Copy link">§</button></h2>
+      <p>Unless otherwise agreed in writing, the Client may not remove, obscure, alter, or deliberately disable SHIELD copyright notices, licensing notices, or required attribution contained within the <code>Client Product</code>.</p>
+      <p>If the Client has purchased a package that expressly permits removal of SHIELD attribution, that package’s terms shall prevail.</p>
+    </section>
+
+    <section id="portfolio-rights" aria-labelledby="h-portfolio">
+      <h2 class="sec" id="h-portfolio">18. Portfolio Rights <button class="anchor" data-anchor="portfolio-rights" aria-label="Copy link to section 18" title="Copy link">§</button></h2>
+      <p>SHIELD may display completed Client Products in:</p>
+      <ul>
+        <li>SHIELD’s portfolio;</li>
+        <li>website;</li>
+        <li>social media;</li>
+        <li>presentations;</li>
+        <li>proposals;</li>
+        <li>case studies;</li>
+        <li>marketing materials;</li>
+        <li>demonstrations.</li>
+      </ul>
+      <p>SHIELD may identify the Client and describe the project at a reasonable level.</p>
+      <p>The Client may request that SHIELD not publicly display the project or specific confidential information by providing written notice.</p>
+      <p>SHIELD shall not intentionally publish Client confidential information merely for portfolio purposes.</p>
+    </section>
+
+    <section id="confidentiality" aria-labelledby="h-conf">
+      <h2 class="sec" id="h-conf">19. Confidentiality <button class="anchor" data-anchor="confidentiality" aria-label="Copy link to section 19" title="Copy link">§</button></h2>
+      <p>Each party shall take reasonable measures to protect confidential information received from the other party.</p>
+      <p>Confidential information includes, where applicable:</p>
+      <ul>
+        <li>credentials;</li>
+        <li>private business information;</li>
+        <li>customer information;</li>
+        <li>proprietary processes;</li>
+        <li>trade secrets;</li>
+        <li>unpublished product information;</li>
+        <li>source code identified as confidential;</li>
+        <li>internal documentation;</li>
+        <li>financial information;</li>
+        <li>private communications.</li>
+      </ul>
+      <p>Confidential information shall not include information that:</p>
+      <ul>
+        <li>is publicly available without breach;</li>
+        <li>was independently known;</li>
+        <li>is lawfully received from another source;</li>
+        <li>becomes public without wrongdoing;</li>
+        <li>is independently developed without using confidential information.</li>
+      </ul>
+    </section>
+
+    <section id="security-proprietary-technology" aria-labelledby="h-security">
+      <h2 class="sec" id="h-security">20. Security and Proprietary Technology <button class="anchor" data-anchor="security-proprietary-technology" aria-label="Copy link to section 20" title="Copy link">§</button></h2>
+      <p>SHIELD may incorporate proprietary security mechanisms into Client Products.</p>
+      <p>These may include:</p>
+      <ul>
+        <li>encryption systems;</li>
+        <li>authentication mechanisms;</li>
+        <li>authorization systems;</li>
+        <li>security middleware;</li>
+        <li>internal monitoring;</li>
+        <li>proprietary security architecture;</li>
+        <li>anti-abuse mechanisms.</li>
+      </ul>
+      <p>The Client does not receive ownership of SHIELD’s proprietary security technology merely because it is used to provide the <code>Client Product</code>.</p>
+      <p>Where a source-code transfer is requested, SHIELD may remove or replace proprietary security mechanisms before handover.</p>
+    </section>
+
+    <section id="client-responsibilities" aria-labelledby="h-resp">
+      <h2 class="sec" id="h-resp">21. Client Responsibilities <button class="anchor" data-anchor="client-responsibilities" aria-label="Copy link to section 21" title="Copy link">§</button></h2>
+      <p>The Client is responsible for providing accurate information, lawful content, required approvals, and required access credentials.</p>
+      <p>The Client shall not knowingly use the <code>Client Product</code> for:</p>
+      <ul>
+        <li>unlawful activities;</li>
+        <li>fraud;</li>
+        <li>malicious activity;</li>
+        <li>unauthorized surveillance;</li>
+        <li>infringement of third-party rights;</li>
+        <li>distribution of malware;</li>
+        <li>abuse of third-party services.</li>
+      </ul>
+      <p>The Client is responsible for ensuring that materials supplied by the Client may legally be used.</p>
+    </section>
+
+    <section id="warranties-service-commitments" aria-labelledby="h-warr">
+      <h2 class="sec" id="h-warr">22. Warranties and Service Commitments <button class="anchor" data-anchor="warranties-service-commitments" aria-label="Copy link to section 22" title="Copy link">§</button></h2>
+      <p>SHIELD shall provide the <code>Client Product</code> substantially in accordance with the functionality agreed for the applicable project.</p>
+      <p>Where SHIELD expressly provides warranties or service commitments in a project agreement, those commitments shall apply.</p>
+      <p>Nothing in this License guarantees:</p>
+      <ul>
+        <li>business revenue;</li>
+        <li>sales volume;</li>
+        <li>customer acquisition;</li>
+        <li>search-engine rankings;</li>
+        <li>advertising performance;</li>
+        <li>market success;</li>
+        <li>uninterrupted third-party services;</li>
+        <li>availability of external APIs;</li>
+        <li>availability of third-party infrastructure.</li>
+      </ul>
+      <p>SHIELD’s explicit service commitments remain enforceable according to the applicable project agreement.</p>
+    </section>
+
+    <section id="limitation-liability" aria-labelledby="h-liab">
+      <h2 class="sec" id="h-liab">23. Limitation of Liability <button class="anchor" data-anchor="limitation-liability" aria-label="Copy link to section 23" title="Copy link">§</button></h2>
+      <p>To the maximum extent permitted by applicable law, SHIELD shall not be liable for indirect, incidental, consequential, special, or unforeseeable losses arising from circumstances outside SHIELD’s reasonable control.</p>
+      <p>This includes losses resulting from:</p>
+      <ul>
+        <li>third-party outages;</li>
+        <li>third-party API changes;</li>
+        <li>hosting-provider failures;</li>
+        <li>domain-provider failures;</li>
+        <li>payment-provider failures;</li>
+        <li>internet failures;</li>
+        <li>Client modifications;</li>
+        <li>unauthorized third-party modifications;</li>
+        <li>misuse of the <code>Client Product</code>;</li>
+        <li>loss caused by inaccurate Client-provided information.</li>
+      </ul>
+      <p>Nothing in this clause shall be interpreted as excluding liability that cannot lawfully be excluded under applicable Indian law.</p>
+    </section>
+
+    <section id="termination" aria-labelledby="h-termin">
+      <h2 class="sec" id="h-termin">24. Termination <button class="anchor" data-anchor="termination" aria-label="Copy link to section 24" title="Copy link">§</button></h2>
+      <p>A subscription or service relationship may terminate according to the applicable commercial agreement.</p>
+      <p>Upon termination:</p>
+      <ul>
+        <li>recurring services may cease;</li>
+        <li>SHIELD-managed hosting may be suspended;</li>
+        <li>support and maintenance may cease;</li>
+        <li>third-party services managed by SHIELD may be disconnected where permitted;</li>
+        <li>source-code transfer may be completed if applicable fees and obligations have been satisfied.</li>
+      </ul>
+      <p>A Client that has purchased a perpetual/lifetime license retains the rights expressly granted under that license, subject to the terms of this License.</p>
+      <p>Termination does not transfer <code>SHIELD Background IP</code> to the Client.</p>
+    </section>
+
+    <section id="source-code-handover" aria-labelledby="h-handover">
+      <h2 class="sec" id="h-handover">25. Source-Code Handover <button class="anchor" data-anchor="source-code-handover" aria-label="Copy link to section 25" title="Copy link">§</button></h2>
+      <p>A source-code handover is a separate operational event and may require:</p>
+      <ul>
+        <li>completion of all payments;</li>
+        <li>confirmation of repository ownership;</li>
+        <li>removal of SHIELD secrets;</li>
+        <li>removal of proprietary SHIELD security systems;</li>
+        <li>removal of internal SHIELD infrastructure;</li>
+        <li>removal of SHIELD credentials;</li>
+        <li>documentation of deployment requirements;</li>
+        <li>migration instructions.</li>
+      </ul>
+      <p>SHIELD shall not provide passwords, private keys, API secrets, internal credentials, or unrelated proprietary infrastructure as part of a standard source-code handover.</p>
+    </section>
+
+    <section id="client-data" aria-labelledby="h-data">
+      <h2 class="sec" id="h-data">26. Client Data <button class="anchor" data-anchor="client-data" aria-label="Copy link to section 26" title="Copy link">§</button></h2>
+      <p>Client data remains the property of the Client, subject to applicable law and third-party service terms.</p>
+      <p>SHIELD may process Client data where necessary to:</p>
+      <ul>
+        <li>provide the <code>Client Product</code>;</li>
+        <li>maintain infrastructure;</li>
+        <li>provide support;</li>
+        <li>perform backups;</li>
+        <li>diagnose issues;</li>
+        <li>maintain security;</li>
+        <li>comply with legal obligations.</li>
+      </ul>
+      <p>The Client remains responsible for ensuring that its collection and use of end-user data complies with applicable privacy and data-protection requirements.</p>
+    </section>
+
+    <section id="open-source-third-party-licenses" aria-labelledby="h-oss">
+      <h2 class="sec" id="h-oss">27. Open-Source and Third-Party Licenses <button class="anchor" data-anchor="open-source-third-party-licenses" aria-label="Copy link to section 27" title="Copy link">§</button></h2>
+      <p>Where open-source or third-party software is incorporated into the <code>Client Product</code>, the relevant third-party license shall continue to apply.</p>
+      <p>Nothing in this License overrides the rights granted by an applicable open-source license.</p>
+      <p>The Client shall comply with applicable third-party license requirements.</p>
+    </section>
+
+    <section id="intellectual-property-infringement" aria-labelledby="h-ip">
+      <h2 class="sec" id="h-ip">28. Intellectual Property Infringement <button class="anchor" data-anchor="intellectual-property-infringement" aria-label="Copy link to section 28" title="Copy link">§</button></h2>
+      <p>Each party retains responsibility for materials it supplies.</p>
+      <p>The Client represents that Client-provided trademarks, images, text, data, and other materials may lawfully be used for the project.</p>
+      <p>SHIELD retains responsibility for intellectual property created by SHIELD, subject to the exclusions for third-party components and Client-provided materials described in this License.</p>
+    </section>
+
+    <section id="changes-to-license" aria-labelledby="h-changes">
+      <h2 class="sec" id="h-changes">29. Changes to this License <button class="anchor" data-anchor="changes-to-license" aria-label="Copy link to section 29" title="Copy link">§</button></h2>
+      <p>SHIELD may release future versions of this License.</p>
+      <p>The version applicable to a <code>Client Product</code> shall be the version incorporated into the applicable project agreement or accepted at the time the relevant license is granted, unless the parties expressly agree otherwise.</p>
+    </section>
+
+    <section id="severability" aria-labelledby="h-sev">
+      <h2 class="sec" id="h-sev">30. Severability <button class="anchor" data-anchor="severability" aria-label="Copy link to section 30" title="Copy link">§</button></h2>
+      <p>If any provision of this License is found to be invalid or unenforceable, the remaining provisions shall continue to the maximum extent permitted by law.</p>
+    </section>
+
+    <section id="governing-law" aria-labelledby="h-gov">
+      <h2 class="sec" id="h-gov">31. Governing Law <button class="anchor" data-anchor="governing-law" aria-label="Copy link to section 31" title="Copy link">§</button></h2>
+      <p>This License shall be governed by and interpreted according to the laws of the <strong>Republic of India</strong>.</p>
+      <p>Any dispute shall be subject to the jurisdiction of competent courts in India, subject to any specific jurisdiction clause contained in the applicable project agreement.</p>
+    </section>
+
+    <section id="entire-agreement" aria-labelledby="h-entire">
+      <h2 class="sec" id="h-entire">32. Entire Agreement <button class="anchor" data-anchor="entire-agreement" aria-label="Copy link to section 32" title="Copy link">§</button></h2>
+      <p>This License, together with the applicable quotation, proposal, statement of work, subscription agreement, or other written project agreement, constitutes the agreement governing the Client’s rights in the applicable <code>Client Product</code>.</p>
+      <p>Where a project-specific written agreement expressly conflicts with this License, the project-specific agreement shall prevail for that specific matter.</p>
+    </section>
+
+    <section id="acceptance" aria-labelledby="h-accept">
+      <h2 class="sec" id="h-accept">33. Acceptance <button class="anchor" data-anchor="acceptance" aria-label="Copy link to section 33" title="Copy link">§</button></h2>
+      <p>By purchasing, accepting delivery of, activating, or continuing to use a <code>Client Product</code> supplied by SHIELD under an agreement incorporating this License, the Client acknowledges that it has read and accepted the applicable terms.</p>
+    </section>
+    </article>
+  </main>
+</div>
+
+<footer role="contentinfo">
+  <strong>SHIELD INTELLIGENCE</strong>
+  Client License v1.0<br>© SHIELD Intelligence
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
